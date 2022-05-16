@@ -1,0 +1,29 @@
+.captain-america, .medusa, .she-hulk {
+  background: linear-gradient(red, white, blue); }
+
+.doc-ock, .chetah, .enchantress {
+  background: darkred; }
+
+.doc-ock {
+  height: 20rem;
+  width: 20rem; }
+
+.chetah {
+  height: 20rem;
+  width: 20rem; }
+
+.enchantress {
+  height: 20rem;
+  width: 20rem; }
+
+.captain-america {
+  height: 20rem;
+  width: 20rem; }
+
+.medusa {
+  height: 20rem;
+  width: 20rem; }
+
+.she-hulk {
+  height: 20rem;
+  width: 20rem; }

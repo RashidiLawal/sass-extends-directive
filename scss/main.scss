@@ -1,0 +1,53 @@
+// .base {
+//     color: blueviolet;
+
+//     &:hover {color: blue;}
+//     &::after {content: "?";}
+
+//     &-stuff {
+//         height: 5rem;
+//     }
+// }
+
+
+// .cool {height: 20rem;}
+
+
+// .new {
+
+//     width: 20px;
+//     @extend .cool, .base-stuff;
+// }
+
+
+
+// %base {
+//     color: aquamarine;
+// }
+
+// .cool {@extend %base;}
+// .new {@extend %base}
+
+
+
+// placeholder can be interpolared
+
+%hero {background: linear-gradient(red , white , blue);}
+%villain {background: darkred;}
+
+@mixin character ($type){
+ height: 20rem;
+ width: 20rem;
+ 
+ @extend %#{$type}
+};
+
+
+
+.doc-ock {@include character(villain);}
+.chetah {@include character(villain);}
+.enchantress {@include character(villain);}
+
+.captain-america {@include character(hero);}
+.medusa {@include character(hero);}
+.she-hulk {@include character(hero);}
